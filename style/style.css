@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -21,7 +22,7 @@ body{
     flex-wrap: wrap;
     width: 350px;
     gap: 3px;
-    cursor: grab;
+    cursor: grab ;
 }
 
 .drag .dragBox{
