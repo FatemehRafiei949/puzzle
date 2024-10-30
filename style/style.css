@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: cadetblue;
+    gap: 50px;
+}
+
+.drag{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 3px;
+    cursor: grab;
+}
+
+.drag .dragBox{
+    position: relative;
+    width:76px;
+    height: 56px;
+    background-color: rgb(179, 180, 182);
+}
+
+.images{
+    position: relative;
+    background-size: cover;
+}
+
+.board{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+
+}
+
+.board .dropBox{
+    position: relative;
+    width: 75px;
+    height: 56px;
+    background-color: rgb(20, 41, 53);
+}
+
+.reset{
+    position: absolute;
+    bottom:40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: aliceblue;
+    font-size: 1rem;
+    font-weight:500;
+    cursor: pointer;
+    border-radius: 10px;
+}
